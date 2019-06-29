@@ -6,4 +6,4 @@ before_install:
   - docker build -t meetgodhani/sample-docker -f Dockerfile.dev .
 
 script:
-  - docker run meetgodhani/sample-docker npm run test -- --coverage
+  - docker run meetgodhani/sample-docker CI=true npm test
